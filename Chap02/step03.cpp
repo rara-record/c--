@@ -23,12 +23,13 @@
 #include <iostream>
 using namespace std;
 int main() {
-  unsigned char x = 0xfa; // 임의의 값으로 초기화
-  unsigned char y = 0x0f;
+    unsigned char x = 0xfa; // 임의의 값으로 초기화
+    unsigned char y = 0x0f;
 
-  x = x &= y; 
+    x &= y; 
 
-  cout << "변환된 x의값 :"  << hex << static_cast<int>(x) << endl;
-  cout << "가지고 있어야할 y의값 :" << hex << static_cast<int>(y) << endl;
-  return 0;
+    cout << "변환된 x의 값: " << hex << static_cast<int>(x) << endl;
+    cout << "가지고 있어야 할 y의 값: " << hex << static_cast<int>(y) << endl;
+    
+    return 0;
 }
